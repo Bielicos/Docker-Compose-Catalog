@@ -1,0 +1,10 @@
+services:
+
+  postgresql:
+    image: postgres:latest
+    container_name: postgresql_server
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: Pg@123
+    # docker container run -d -p 5432:5432 postgres
